@@ -15,6 +15,8 @@ func registerRoute(db *gorm.DB) {
 	})
 
 	routes.RegisterUserRoutes(app, db)
-
+	routes.RegisterProductRoutes(app, db)
+	routes.RegisterBasketRoutes(app, db)
+	
 	app.Listen(":3000")
 }

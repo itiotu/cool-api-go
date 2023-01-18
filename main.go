@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"os"
 
-	d "cool-api/database"
+	"cool-api/database"
 )
 
 func main() {
-	db, err := d.Connect()
+	db, err := database.Connect()
 
 	if err != nil {
 		fmt.Fprintln(os.Stderr, err)
